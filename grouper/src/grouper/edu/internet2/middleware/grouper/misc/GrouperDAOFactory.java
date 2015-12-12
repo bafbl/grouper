@@ -59,7 +59,6 @@ import edu.internet2.middleware.grouper.internal.dao.GroupDAO;
 import edu.internet2.middleware.grouper.internal.dao.GroupSetDAO;
 import edu.internet2.middleware.grouper.internal.dao.MemberDAO;
 import edu.internet2.middleware.grouper.internal.dao.MembershipDAO;
-import edu.internet2.middleware.grouper.internal.dao.MessageDAO;
 import edu.internet2.middleware.grouper.internal.dao.PITAttributeAssignActionDAO;
 import edu.internet2.middleware.grouper.internal.dao.PITAttributeAssignActionSetDAO;
 import edu.internet2.middleware.grouper.internal.dao.PITAttributeAssignDAO;
@@ -122,6 +121,7 @@ public abstract class GrouperDAOFactory {
    * Return singleton {@link GrouperDAOFactory} implementation using the specified
    * configuration.
    * <p/>
+   * @param cfg 
    * @return factory
    * @throws  IllegalArgumentException if <i>cfg</i> is null.
    * @since   1.2.1
@@ -270,12 +270,6 @@ public abstract class GrouperDAOFactory {
    * @since   1.2.0
    */
   public abstract MemberDAO getMember();
-
-  /**
-   * @return message dao
-   * @since   2.3
-   */
-  public abstract MessageDAO getMessage();
 
   /**
    * @return membership dao

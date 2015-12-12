@@ -217,12 +217,6 @@ public class GoogleAppsFullSync {
                         LOG.error("Google Apps Consume '{}' Full Sync - Error updating matched group ({}): {}", new Object[]{consumerName, item.getName(), e.getMessage()});
                     }
                 }
-                
-                try {
-                  connector.unarchiveGooGroupIfNecessary(gooGroup);
-                } catch (IOException e) {
-                  LOG.error("Google Apps Consume '{}' Full Sync - Error checking archive status for matched group ({}): {}", new Object[]{consumerName, item.getName(), e.getMessage()});
-                }
 
                 //Retrieve Membership
                 ArrayList<ComparableMemberItem> grouperMembers = new ArrayList<ComparableMemberItem>();
