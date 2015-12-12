@@ -41,8 +41,6 @@ import java.util.Properties;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import edu.internet2.middleware.subject.SubjectUtils;
-
 /**
  * 
  */
@@ -106,14 +104,4 @@ public class Search {
     return this.params;
   }
 
-  /**
-   * @see java.lang.Object#toString()
-   */
-  @Override
-  public String toString() {
-    return "Search [params=" + SubjectUtils.propertiesToString(this.params) + ", searchType=" + this.searchType + "]";
-  }
-
-  
-  
 }

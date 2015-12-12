@@ -242,17 +242,5 @@ public class AttributeDefActionDelegate {
       this.configureActionList(allowedActionStrings);
     }
   }
-  
-  /**
-   * replace existing all actions with newActions
-   * @param newActions
-   */
-  public void replaceAllActionsWith(Collection newActions) {
-
-    Set<String> allowedActionStrings = this.allowedActionStrings();
-    allowedActionStrings = new HashSet<String>();
-    allowedActionStrings.addAll(newActions);
-    this.configureActionList(allowedActionStrings);
-  }
 
 }

@@ -38,7 +38,6 @@ public class AllHooksExamplesTests {
     //$JUnit-BEGIN$
     suite.addTestSuite(AttributeSecurityFromTypeHookTest.class);
     suite.addTestSuite(GroupAttributeNameValidationHookTest.class);
-    suite.addTestSuite(MembershipOneInFolderMaxHookTest.class);
     suite.addTestSuite(UniqueObjectHookTest.class);
     //$JUnit-END$
     return suite;
